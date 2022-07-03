@@ -73,7 +73,12 @@
 	    								class="pure-button pure-button-primary">Edit    								
     								</button>    								
     							</td>
-    							<td>Delete</td>    						
+    							<td>
+    								<button type="button"
+										onclick="location.href='${ pageContext.request.contextPath }/mvc/user/delete/${ user.id }';"
+										class="pure-button pure-button-primary">Delete
+									</button>
+								</td>    						
     						</tr>    					    					
     					</c:forEach>    				
     				</tbody>

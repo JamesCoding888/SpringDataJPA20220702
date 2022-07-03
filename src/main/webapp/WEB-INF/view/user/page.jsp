@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Head -->
+	<%@include file="../include/head.jspf" %>
+</head>
+<body style="padding: 20px">
+
+<div id="layout">
+    <!-- Menu toggle -->
+   	<%@include file="../include/toggle.jspf" %>
+
+   	<!-- Menu  -->
+   	<%@include file="../include/menu.jspf" %>
+
+   
+
+    <div id="main">
+        <div class="header">
+            <h1>User</h1>
+            <h2>CRUD</h2>
+        </div>
+	</div>
+    <table>
+    	<td valign="top">
+    		<!-- User 表單 -->
+    		<form class="pure-form"
+    				   method="GET"
+    				   action="${ pageContext.request.contextPath }/mvc/user/page">
+    			<select name="no" onchange="this.form.submit()">
+    				<option value="0">1</option>
+    				<option value="1">2</option>
+    				<option value="2">3</option>
+    			</select>
+    				    
+    				   
+    		</form>
+    	</td>
+    	<td valign="top">
+    		<!-- User 列表 -->
+    		<form class="pure-form">
+    			<fieldset>User List</fieldset>
+    			<table class="pure-table pure-table-bordered">
+    				<thead>
+    					<tr>
+    						<th>ID</th>
+    						<th>Name</th>
+    						<th>Password</th>
+    						<th>Birth</th>
+    				</thead>
+    				<tbody>
+    					<c:forEach var="user" items="${ users }">
+    						<tr>
+    							<td>${ user.id }</td>
+    							<td>${ user.name }</td>
+    							<td>${ user.password }</td>
+    							<td>${ user.birth }</td>
+    						</tr>
+    					</c:forEach>    				
+    				</tbody>
+    			</table>
+    		</form>
+    	</td>
+    </table>
+</div>
+<!-- Foot  -->
+<%@include file="../include/foot.jspf" %>
+
+</body>
+</html>  
