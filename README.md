@@ -13,3 +13,6 @@ SpringDataJPA20220606
 - hibernate.format_sql
 - hibernate.show_sql
 - JPQL
+
+20211008
+- SpringData 的機制 (欄位是同一個 id，若有資料則修改，無資料則新增)![image](https://user-images.githubusercontent.com/83496093/177023154-964f44cc-df9a-4bf6-ba54-693248e2aea0.png)
