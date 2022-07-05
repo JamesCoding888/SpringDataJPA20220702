@@ -1,5 +1,5 @@
 package com.spring.mvc.single.entity.controller;
-import java.util.Arrays;  
+import java.util.Arrays;   
 import java.util.Date;
 import java.util.List; 
 import java.util.Random;
@@ -97,6 +97,7 @@ public class UserController {
 		Page<User> page = userRepository.findAll(pageRequest);
 		model.addAttribute("users", page.getContent());
 		model.addAttribute("totalPages", page.getTotalPages());
+		model.addAttribute("pageNo", no);
 		return "user/page"; // 重導到 /WEB_INF/view/user/page.jsp
 	}
 	
