@@ -6,10 +6,13 @@
 
 		<ul class="pure-menu-list">
 			<li class="pure-menu-item menu-item-divided pure-menu-selected">
-				<a href="${ pageContext.request.contextPath }" class="pure-menu-link">User CRUD</a>
+				<a href="${ pageContext.request.contextPath }/mvc/user/" class="pure-menu-link">User CRUD</a>
 			</li>
 			<li class="pure-menu-item">
-				<a href="${ pageContext.request.contextPath }" class="pure-menu-link">User Page</a>
+				<a href="${ pageContext.request.contextPath }/mvc/user/page" class="pure-menu-link">User Page</a>
+			</li>
+			<li class="pure-menu-item">
+				<a href="${ pageContext.request.contextPath }/rest.jsp" class="pure-menu-link">User REST</a>
 			</li>
 		</ul>
 	</div>

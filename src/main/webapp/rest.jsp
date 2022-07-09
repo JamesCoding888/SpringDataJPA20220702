@@ -6,15 +6,16 @@
 <head>
 	<!-- Head -->
 	<%@include file="WEB-INF/view/include/head.jspf" %>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </head>
-<body style="padding: 20px">
+<body style="padding: 20px" ng-app="myApp">
 
 <div id="layout">
     <!-- Menu toggle -->
-   	<%@include file="WEB-INF/view/include/toggle.jspf" %>
+   	<%@include file="/WEB-INF/view/include/toggle.jspf" %>
 
    	<!-- Menu  -->
-   	<%@include file="WEB-INF/view/include/menu.jspf" %>
+   	<%@include file="/WEB-INF/view/include/menu.jspf" %>
 
    
 
@@ -53,7 +54,7 @@
     </table>
 </div>
 <!-- Foot  -->
-<%@include file="WEB-INF/view/include/foot.jspf" %>
+<%@include file="/WEB-INF/view/include/foot.jspf" %>
 
 </body>
 </html>  
