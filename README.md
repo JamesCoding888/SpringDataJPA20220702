@@ -16,3 +16,11 @@ SpringDataJPA20220606
 
 20211008
 - SpringData 的機制 (欄位是同一個 id，若有資料則修改，無資料則新增)
+
+20211015
+- Redis 
+- AngularJS 
+- $scope, $http 
+- ng-controller 
+- Ajax 
+- XMLHttpRequest
